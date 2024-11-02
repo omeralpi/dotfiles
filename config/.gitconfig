@@ -2,6 +2,8 @@
 	email = omeralpi@icloud.com
 	name = omeralpi
 	signingKey = DC92B11C0BA84F84
+[core]
+    excludesfile = ~/.gitignore_global
 [commit]
 	gpgsign = true
 [gpg]
