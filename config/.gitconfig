@@ -6,6 +6,8 @@
 	gpgsign = true
 [gpg]
 	program = /opt/homebrew/bin/gpg
+[alias]
+    hotfix = "!git commit -v --no-edit --amend -n && git push --force-with-lease"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
