@@ -1,0 +1,15 @@
+tap "homebrew/bundle"
+tap "homebrew/services"
+
+brew "git"
+brew "lazygit"
+brew "mkcert"
+brew "nvm"
+brew "wget"
+brew "rectangle"
+
+cask "visual-studio-code"
+cask "spotify"
+cask "google-chrome"
+cask "font-hack-nerd-font"
+cask "docker"

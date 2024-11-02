@@ -1,17 +1,27 @@
-# My dotfiles
+# Dotfiles and Environment Setup for macOS
+
+This repository contains configuration files and setup scripts to easily manage and install `brew` packages, `brew` applications, and `git` configurations on macOS.
 
 ## Contents
 
-- .zshrc and aliases
-- vscode settings
+- **mac**: A directory containing macOS-specific configurations
+- **Brewfile**: A list of all `brew` packages and `cask` applications
+- **dotfiles**: A directory containing configuration files (e.g., `.gitconfig`)
+- **setup.sh**: A script to automate the setup process on a new machine
 
-## Installation
+## Setup
 
-Clone the repository and run the installation script:
-
-```sh
-git clone git://github.com/omeralpi/dotfiles.git
-./dotfiles/install.sh
+1. Clone this repository to your local machine
+```bash
+git clone https://github.com/omeralpi/dotfiles
+```
+2. Run the setup script
+```bash
+cd dotfiles
+chmod +x setup.sh
+./setup.sh
 ```
 
-It will create symlinks in the home directory for everything on `dotfiles/`.
+## License
+
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.

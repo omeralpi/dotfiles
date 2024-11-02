@@ -1,0 +1,13 @@
+[user]
+	email = omeralpi@icloud.com
+	name = omeralpi
+	signingKey = DC92B11C0BA84F84
+[commit]
+	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
