@@ -3,13 +3,33 @@
 	name = omeralpi
 	signingKey = DC92B11C0BA84F84
 [core]
-    excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [commit]
 	gpgsign = true
 [gpg]
 	program = /opt/homebrew/bin/gpg
 [alias]
-    hotfix = "!git commit -v --no-edit --amend -n && git push --force-with-lease"
+	# Reset things
+	hotfix = "!git commit -v --no-edit --amend -n && git push --force-with-lease"
+	unstage = reset HEAD --
+	uncommit = reset --soft HEAD^
+
+	# View abbreviated SHA, description, and history graph of the latest 20 commits
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	ll = log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an (%ce)>%Creset' --abbrev-commit --all
+
+	# View the current working tree status using the short format
+	s = status -s
+
+	# Show the diff between the latest commit and the current state
+	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+	dc = !"git difftool"
+
+	# Switch to a branch, creating it if necessary
+	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+
+	# Amend the currently staged files to the latest commit
+	amend = commit --amend --reuse-message=HEAD
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
