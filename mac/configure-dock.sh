@@ -47,8 +47,3 @@ echo "Restarting Dock..."
 killall Dock
 
 echo "Dock configuration completed."
-# Restart Dock to apply changes
-echo "Restart of Dock..."
-killall Dock
-
-echo "Dock configuration completed."

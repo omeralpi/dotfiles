@@ -6,14 +6,14 @@ This repository contains configuration files and setup scripts to easily manage 
 
 - **mac**: A directory containing macOS-specific configurations
 - **Brewfile**: A list of all `brew` packages and `cask` applications
-- **dotfiles**: A directory containing configuration files (e.g., `.gitconfig`)
+- **config**: A directory containing configuration files (e.g., `.gitconfig`)
 - **setup.sh**: A script to automate the setup process on a new machine
 
 ## Setup
 
 1. Clone this repository to your local machine
 ```bash
-git clone https://github.com/omeralpi/dotfiles
+git clone https://github.com/omeralpi/dotfiles.git
 ```
 2. Run the setup script
 ```bash

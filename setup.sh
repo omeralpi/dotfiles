@@ -9,8 +9,8 @@ if [ -f Brewfile ]; then
     xargs brew install < Brewfile
 fi
 
-# Set up git configuration
-for file in .gitconfig .gitignore_global; do
+# Link config files
+for file in .gitconfig .gitignore_global .bashrc .bash_profile; do
     if [ -f "$DOTFILES_DIR/config/$file" ]; then
         ln -sf "$DOTFILES_DIR/config/$file" "$HOME/$file"
         echo "$file linked successfully."
