@@ -8,8 +8,11 @@
 	gpgsign = true
 [gpg]
 	program = /opt/homebrew/bin/gpg
+[http]
+	postBuffer = 52428800
 [alias]
 	# Reset things
+	stage = "!git add ."
 	hotfix = "!git commit -v --no-edit --amend -n && git push --force-with-lease"
 	unstage = reset HEAD --
 	uncommit = reset --soft HEAD^
