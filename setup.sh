@@ -19,6 +19,15 @@ for file in .gitconfig .gitignore_global .bashrc .bash_profile; do
     fi
 done
 
+# Link husky init.sh
+if [ -f "$DOTFILES_DIR/config/husky/init.sh" ]; then
+    mkdir -p "$HOME/.config/husky"
+    ln -sf "$DOTFILES_DIR/config/husky/init.sh" "$HOME/.config/husky/init.sh"
+    echo "husky/init.sh linked successfully."
+else
+    echo "Warning: husky/init.sh not found in $DOTFILES_DIR"
+fi
+
 # Set up mac configuration
 bash "$DOTFILES_DIR/mac/configure-dock.sh"
 
