@@ -30,5 +30,6 @@ fi
 
 # Set up mac configuration
 bash "$DOTFILES_DIR/mac/configure-dock.sh"
+bash "$DOTFILES_DIR/mac/configure-mac.sh"
 
 echo "Setup complete!"
