@@ -17,7 +17,7 @@ git clone https://github.com/omeralpi/dotfiles.git
 ```
 2. Run the setup script
 ```bash
-cd dotfiles
+cd dotfiles/src
 chmod +x setup.sh
 ./setup.sh
 ```
