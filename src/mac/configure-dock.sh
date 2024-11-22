@@ -40,7 +40,7 @@ function add_apps_to_dock() {
 # Clear all applications from the Dock
 defaults write com.apple.dock persistent-apps -array
 
-add_apps_to_dock "Mail" "Notes" "ChatGPT" "WhatsApp.localized/WhatsApp" "Google Chrome" "Visual Studio Code" "Warp"
+add_apps_to_dock "Mail" "Notes" "ChatGPT" "WhatsApp.localized/WhatsApp" "Google Chrome" "Visual Studio Code" "iTerm"
 
 # Restart Dock to apply changes
 echo "Restarting Dock..."

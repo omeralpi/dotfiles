@@ -9,8 +9,11 @@ if [ -f Brewfile ]; then
     xargs brew install < Brewfile
 fi
 
+# Install oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Link config files
-for file in .gitconfig .gitignore_global .bashrc .bash_profile; do
+for file in .gitconfig .gitignore_global .zshrc .bashrc .bash_profile; do
     if [ -f "$DOTFILES_DIR/config/$file" ]; then
         ln -sf "$DOTFILES_DIR/config/$file" "$HOME/$file"
         echo "$file linked successfully."
