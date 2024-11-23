@@ -6,7 +6,6 @@ brew "lazygit"
 brew "mkcert"
 brew "nvm"
 brew "wget"
-brew "rectangle"
 
 cask "visual-studio-code"
 cask "spotify"
