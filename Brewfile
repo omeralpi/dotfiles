@@ -7,9 +7,8 @@ brew "mkcert"
 brew "nvm"
 brew "wget"
 
-cask "visual-studio-code"
-cask "spotify"
-cask "google-chrome"
-cask "font-hack-nerd-font"
-cask "docker"
-cask "iterm2"
+cask "visual-studio-code" unless system("ls /Applications | grep -i 'Visual Studio Code.app'")
+cask "spotify" unless system("ls /Applications | grep -i 'Spotify.app'")
+cask "google-chrome" unless system("ls /Applications | grep -i 'Google Chrome.app'")
+cask "docker" unless system("ls /Applications | grep -i 'Docker.app'")
+cask "iterm2" unless system("ls /Applications | grep -i 'iTerm.app'")
