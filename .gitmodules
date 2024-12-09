@@ -1,6 +1,18 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "dotbot-brewfile"]
-	path = dotbot-brewfile
-	url = https://github.com/sobolevn/dotbot-brewfile.git
+# [submodule "zsh/oh-my-zsh/custom/plugins/alias-tips"]
+# 	path = zsh/oh-my-zsh/custom/plugins/alias-tips
+# 	url = https://github.com/djui/alias-tips
+# [submodule "zsh/oh-my-zsh/custom/plugins/careful_rm"]
+# 	path = zsh/oh-my-zsh/custom/plugins/careful_rm
+# 	url = git@github.com:MikeDacre/careful_rm.git
+# [submodule "zsh/oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+# 	path = zsh/oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+# 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+# [submodule "zsh/oh-my-zsh/custom/plugins/git-trim"]
+# 	path = zsh/oh-my-zsh/custom/plugins/git-trim
+# 	url = https://github.com/jasonmccreary/git-trim.git
+# [submodule "zsh/oh-my-zsh/custom/plugins/fzf-tab"]
+# 	path = zsh/oh-my-zsh/custom/plugins/fzf-tab
+# 	url = https://github.com/Aloxaf/fzf-tab

@@ -1,13 +1,13 @@
 [user]
 	email = omeralpi@icloud.com
 	name = omeralpi
-	signingKey = DC92B11C0BA84F84
+	signingKey = 0668F8CFE218EC96
 [core]
 	excludesfile = ~/.gitignore_global
 [commit]
 	gpgsign = true
 [gpg]
-	program = /opt/homebrew/bin/gpg
+	program = gpg2
 [http]
 	postBuffer = 52428800
 [alias]
