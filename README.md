@@ -1,37 +1,62 @@
-# omeralpi's dotfiles
+# Dotfiles
 
-This repository contains configuration files and setup scripts to easily manage and install `brew` packages, `brew` applications, and `git` configurations on macOS.
+This repository contains my personal dotfiles for maintaining a consistent development environment across different machines.
 
-## Contents
+## 🚀 Quick Start
 
-- **git**: A directory containing `git` configuration files (e1.g., `.gitconfig`)
-- **husky**: A directory containing `husky` configuration files
-- **zsh**: A directory containing `zsh` configuration files (e.g., `.zshrc`)
-- **Brewfile**: A list of all `brew` packages and `cask` applications
-- **install.conf.yaml**: A configuration file for `dotbot` to install `brew` packages, `brew` applications, and `git` configurations
-
-## Setup
-
-1. Clone this repository to your local machine
-
+1. Clone the repository:
 ```bash
-git clone https://github.com/omeralpi/dotfiles.git
+git clone https://github.com/omeralpi/dotfiles.git ~/dotfiles
 ```
 
-2. Run the setup script
-
+2. Run the sync script:
 ```bash
-cd dotfiles
-chmod +x ./run-dotbot
-chmod +x ./install
-./install
+cd ~/dotfiles
+chmod +x sync.sh
+./sync.sh
 ```
 
-## Todo
+## 📦 Contents
 
-- [ ] Add `nvim` configuration files
-- [ ] Add `tmux` configuration files
+- `.gitconfig`: Git configuration and aliases
+- `.gitignore_global`: Global Git ignore patterns
+- `.zshrc`: ZSH shell configuration with Oh My Zsh
+- `sync.sh`: Synchronization script
 
-## License
+## ⚡️ Features
 
-This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+### Sync Script
+The `sync.sh` script automatically:
+- Creates symbolic links from dotfiles to your home directory
+- Backs up existing configuration files (`.bak` extension)
+- Syncs changes with the remote repository
+
+### Git Aliases
+Useful Git aliases included in `.gitconfig`:
+
+- `git s`: Short status view
+- `git l`: View last 20 commits with graph
+- `git ll`: Detailed log with graph and author info
+- `git uncommit`: Undo last commit (keeps changes staged)
+- `git unstage`: Remove files from staging area
+- `git go <branch>`: Switch/create branch
+- `git amend`: Amend last commit
+- `git hotfix`: Amend and force push (use carefully!)
+
+### Prerequisites
+
+- Git
+- Zsh
+- Oh My Zsh
+- curl (for Oh My Zsh installation)
+
+### ZSH Setup
+1. Install Oh My Zsh (if not already installed):
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+2. The included `.zshrc` configuration uses the "robbyrussell" theme by default. You can change it by modifying the `ZSH_THEME` variable.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
